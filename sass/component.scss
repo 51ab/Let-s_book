@@ -13,7 +13,7 @@
     flex :0 0 40%;
     &_input{
         background-color: rgb(209, 191, 191);
-        font-size:2rem;
+        font-size:2.5rem;
         border: none;
         padding: .7rem 2rem;
         border-radius: 100px;
@@ -124,3 +124,40 @@
 
     }
 }
+.sidebar{
+    
+    padding: 1%;
+    .sidenav{
+        //margin-right: 2%;
+        
+        
+
+    
+    &_items{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+    &_link:link,
+    &_link:visited{
+        color:white;
+       // padding: 1rem 2rem;
+        font-size: 2.5rem;
+        
+            text-decoration: none;
+           // padding: 1rem 2rem;
+    }
+    
+    &_link:hover{
+        color:crimson;
+    }
+    
+
+    }
+
+.sidenav_icon{
+    height:2rem;
+    width:2rem;
+    fill:currentColor;
+    margin-right: 0.2rem;
+}}

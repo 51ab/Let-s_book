@@ -32,7 +32,7 @@ body {
   flex: 0 0 40%; }
   .search_input {
     background-color: #d1bfbf;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border: none;
     padding: .7rem 2rem;
     border-radius: 100px;
@@ -103,6 +103,23 @@ body {
     align-items: center;
     margin-left: 0.7rem; }
 
+.sidebar {
+  padding: 1%; }
+  .sidebar .sidenav_items {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .sidebar .sidenav_link:link, .sidebar .sidenav_link:visited {
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none; }
+  .sidebar .sidenav_link:hover {
+    color: crimson; }
+  .sidebar .sidenav_icon {
+    height: 2rem;
+    width: 2rem;
+    fill: currentColor;
+    margin-right: 0.2rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -122,8 +139,8 @@ body {
   display: flex; }
 
 .sidebar {
-  background-color: aquamarine;
-  flex: 0 0 18%; }
+  background-color: #141615;
+  flex: 0 0 20%; }
 
 .hotel {
   background-color: #054277;
