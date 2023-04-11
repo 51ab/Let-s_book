@@ -103,22 +103,41 @@ body {
     align-items: center;
     margin-left: 0.7rem; }
 
-.sidebar {
-  padding: 1%; }
+.sidebar .sidenav {
+  text-decoration: none;
+  list-style: none; }
+  .sidebar .sidenav_items::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    left: 0%;
+    height: 100%;
+    background-color: crimson;
+    transform: scaleY(0);
+    transition: transform .4s; }
+  .sidebar .sidenav_items:hover:before, .sidebar .sidenav_items_active:before {
+    transform: scaleY(1);
+    width: 100%; }
   .sidebar .sidenav_items {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 2%; }
   .sidebar .sidenav_link:link, .sidebar .sidenav_link:visited {
     color: white;
     font-size: 2.5rem;
-    text-decoration: none; }
+    padding: 2%;
+    position: relative;
+    text-decoration: none;
+    z-index: 100px; }
   .sidebar .sidenav_link:hover {
-    color: crimson; }
-  .sidebar .sidenav_icon {
-    height: 2rem;
-    width: 2rem;
-    fill: currentColor;
-    margin-right: 0.2rem; }
+    color: white; }
+
+.sidebar .sidenav_icon {
+  height: 2rem;
+  width: 2rem;
+  fill: currentColor;
+  margin-right: 0.2rem; }
 
 .container {
   max-width: 120rem;
@@ -136,7 +155,8 @@ body {
   align-items: center; }
 
 .content {
-  display: flex; }
+  display: flex;
+  height: 100vh; }
 
 .sidebar {
   background-color: #141615;

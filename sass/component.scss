@@ -126,16 +126,41 @@
 }
 .sidebar{
     
-    padding: 1%;
+    
     .sidenav{
         //margin-right: 2%;
         
+        text-decoration: none;
+        list-style: none;
         
 
+        &_items::before{
+           content:"";
+           position: absolute;
+           width:3px;
+           left: 0%;
+           height: 100%;
+           background-color: crimson;
+           transform: scaleY(0);
+           transition: transform .4s;
     
+        }
+        &_items:hover:before,
+        &_items_active:before
+        {
+            
+            transform: scaleY(1); 
+            width:100%;
+            
+           
+
+        }
     &_items{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        position: relative;
+        padding: 2%;
+        
 
     }
     &_link:link,
@@ -143,13 +168,17 @@
         color:white;
        // padding: 1rem 2rem;
         font-size: 2.5rem;
-        
+        padding: 2%;
+        position: relative;
             text-decoration: none;
            // padding: 1rem 2rem;
+           z-index: 100px;
     }
     
     &_link:hover{
-        color:crimson;
+        color:white;
+        
+        
     }
     
 
