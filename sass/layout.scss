@@ -1,0 +1,27 @@
+.container{
+max-width: 120rem; //1200px max and for rest 100%
+margin: 8rem auto;
+background-color: rgb(187, 173, 173);
+box-shadow: 0 2rem 6rem rgba(0,0,0,0.3);
+min-height: 50rem;
+
+}
+.header{
+    height: 8rem;
+    background-color: white;
+    border-bottom: lightgrey;
+
+}
+.content{
+    display:flex;
+
+}
+.sidebar{
+    background-color: aquamarine;
+    flex : 0 0 18%; //no grow and no shrink and width is always 18%
+}
+.hotel{
+    background-color: rgb(5, 66, 119);
+    flex:1; //to take the remaining space
+
+}

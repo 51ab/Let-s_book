@@ -1,0 +1,56 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-image: linear-gradient(to right bottom, crimson, #e23937);
+  background-color: #e23937;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  font-weight: 400;
+  background-size: cover;
+  min-height: 100vh; }
+
+.logo {
+  height: 8rem; }
+
+.search_icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user_nav_icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: #bbadad;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 50rem; }
+
+.header {
+  height: 8rem;
+  background-color: white;
+  border-bottom: lightgrey; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: aquamarine;
+  flex: 0 0 18%; }
+
+.hotel {
+  background-color: #054277;
+  flex: 1; }
