@@ -22,15 +22,86 @@ body {
   min-height: 100vh; }
 
 .logo {
-  height: 8rem; }
+  height: 8rem;
+  margin-left: 1%; }
 
-.search_icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40%; }
+  .search_input {
+    background-color: #d1bfbf;
+    font-size: 2rem;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .3s;
+    margin-right: -3.25rem; }
+    .search_input:focus {
+      outline: none;
+      width: 100%;
+      background-color: #af9b9b; }
+    .search_input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: black; }
+  .search_input:focus + .search_button {
+    background-color: #af9b9b; }
+  .search_button {
+    border: none;
+    background-color: #d1bfbf;
+    color: aliceblue; }
+    .search_button:focus {
+      outline: none; }
+    .search_button:active {
+      transform: translateX(2px); }
+  .search_icon {
+    height: 2rem;
+    width: 2rem; }
 
-.user_nav_icon {
-  height: 2.25rem;
-  width: 2.25rem; }
+.user_nav {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin-left: -2%; }
+  .user_nav_icon_box {
+    padding: 0 1.5rem;
+    cursor: pointer;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    position: relative; }
+  .user_nav_icon_box:hover {
+    background-color: #e0dada; }
+  .user_nav_icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user_nav_notifications {
+    font-size: .8rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 100px;
+    background-color: crimson;
+    color: wheat;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .user_nav_user {
+    display: grid;
+    margin-right: 2rem;
+    margin-left: 1.3rem; }
+  .user_nav_user_photo {
+    height: 5rem;
+    border-radius: 100px;
+    background-color: #cfe2e2; }
+  .user_nav_user_name {
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: 0.7rem; }
 
 .container {
   max-width: 120rem;
@@ -42,7 +113,10 @@ body {
 .header {
   height: 8rem;
   background-color: white;
-  border-bottom: lightgrey; }
+  border-bottom: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   display: flex; }
