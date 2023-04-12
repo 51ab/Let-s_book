@@ -139,6 +139,39 @@ body {
   fill: currentColor;
   margin-right: 0.2rem; }
 
+.gallery {
+  display: flex;
+  align-items: center; }
+  .gallery_items {
+    width: 34%;
+    height: 50%; }
+  .gallery_pic {
+    width: 100%;
+    height: 100%; }
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  background-color: antiquewhite;
+  padding: 0%; }
+  .overview h1 {
+    text-transform: uppercase;
+    font-size: 3rem; }
+  .overview_location {
+    display: flex; }
+    .overview_location h2 {
+      text-decoration: underline; }
+  .overview_icon {
+    width: 2rem;
+    height: 2rem;
+    fill: crimson; }
+  .overview_vote {
+    background-color: crimson;
+    color: white;
+    padding: 1.5%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -163,5 +196,4 @@ body {
   flex: 0 0 20%; }
 
 .hotel {
-  background-color: #054277;
   flex: 1; }
