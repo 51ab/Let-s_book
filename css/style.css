@@ -140,11 +140,9 @@ body {
   margin-right: 0.2rem; }
 
 .gallery {
-  display: flex;
-  align-items: center; }
+  display: flex; }
   .gallery_items {
-    width: 34%;
-    height: 50%; }
+    width: 34%; }
   .gallery_pic {
     width: 100%;
     height: 100%; }
@@ -155,14 +153,29 @@ body {
   align-items: center;
   height: 7rem;
   background-color: antiquewhite;
-  padding: 0%; }
-  .overview h1 {
-    text-transform: uppercase;
-    font-size: 3rem; }
+  border-bottom: 2px solid #807070; }
+  .overview_hotel_name {
+    padding: 0% 1%; }
+    .overview_hotel_name h1 {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-family: 'Times New Roman', Times, serif; }
   .overview_location {
+    display: flex;
+    align-items: center; }
+    .overview_location a {
+      border-bottom: 1px solid crimson;
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .overview_location a:hover {
+        color: crimson;
+        border-bottom: none;
+        cursor: pointer;
+        animation: twink .7s infinite; }
+  .overview_stars {
     display: flex; }
-    .overview_location h2 {
-      text-decoration: underline; }
   .overview_icon {
     width: 2rem;
     height: 2rem;
@@ -171,6 +184,17 @@ body {
     background-color: crimson;
     color: white;
     padding: 1.5%; }
+
+@keyframes twink {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
 
 .container {
   max-width: 120rem;
@@ -182,7 +206,7 @@ body {
 .header {
   height: 8rem;
   background-color: white;
-  border-bottom: lightgrey;
+  border-bottom: 1px solid lightgrey;
   display: flex;
   justify-content: space-between;
   align-items: center; }
