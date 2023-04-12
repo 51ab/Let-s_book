@@ -17,7 +17,7 @@ min-height: 50rem;
 }
 .content{
     display:flex;
-    height: 100vh;
+    height: 100%;
 
 }
 .sidebar{
@@ -28,5 +28,25 @@ min-height: 50rem;
 .hotel{
    // background-color: rgb(5, 66, 119);
     flex:1; //to take the remaining space
+
+}
+.detail{
+    display: flex;
+    padding: 4%;
+    background-color: bisque;
+    border-bottom: 1cm black;
+    
+}
+.description{
+    flex: 0 0 60%;// no grow, no shrink total width
+    margin-right: 4%;
+    background-color:orangered ;
+    padding:4%;
+    
+
+}
+.review{
+    flex :1;
+    background-color: yellowgreen;
 
 }

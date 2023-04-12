@@ -253,6 +253,7 @@
         background-color: crimson;
         color:white;
         padding: 1.5%;
+       // align-self: self-start;
     }
 }
 
@@ -269,4 +270,89 @@
         transform: scale(1);
         box-shadow: none;
     }
+}
+.detail{
+  
+    p{
+        font-size: 1.6rem;
+    }
+    li{
+        font-size: 1.4rem;
+    }
+    h1{
+        color:rgb(62, 58, 58);
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    .list{
+        padding: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4%;
+        border-bottom: 0.5px solid rgb(116, 110, 110);
+        border-top: 0.5px solid rgb(116, 110, 110);
+        &_item{
+            flex:0 0 50%;
+        }
+        &_icon{
+            height: 2rem;
+            width:2rem;
+        }
+
+    }
+
+    .similar_item{
+        display: flex;
+        a{
+            text-decoration: none;
+            color:rgb(62, 58, 58);
+            :hover{
+                color:rgb(231, 179, 170);
+            }
+        }
+      &_list{
+       
+      }
+      img{
+        width:15rem;
+      }
+    }
+    .similar{
+        margin-top: 5%;
+    }
+}
+.review{
+    padding:  1%;
+    &_text{
+        font-size: 1.5rem;
+    }
+    &_user{
+        display: flex;
+        justify-content: space-between;
+        img{
+            border-radius: 50%;
+        }
+    }
+
+
+&_box{
+    padding: 6%;
+    background-color: lavenderblush;
+    margin-bottom: 9%;
+    margin-top: 9%;
+    p{
+        font-size: 1.2rem;
+       // margin-right: 0.3%;
+    }
+    img{
+        width:4rem;
+    }
+   
+}
+.review_rating{
+    margin-right: 0%;
+    p{
+    font-size: 2.5rem;
+    color:crimson;}
+}
 }

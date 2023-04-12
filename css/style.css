@@ -196,6 +196,66 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
+.detail p {
+  font-size: 1.6rem; }
+
+.detail li {
+  font-size: 1.4rem; }
+
+.detail h1 {
+  color: #3e3a3a;
+  font-family: 'Times New Roman', Times, serif; }
+
+.detail .list {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4%;
+  border-bottom: 0.5px solid #746e6e;
+  border-top: 0.5px solid #746e6e; }
+  .detail .list_item {
+    flex: 0 0 50%; }
+  .detail .list_icon {
+    height: 2rem;
+    width: 2rem; }
+
+.detail .similar_item {
+  display: flex; }
+  .detail .similar_item a {
+    text-decoration: none;
+    color: #3e3a3a; }
+    .detail .similar_item a :hover {
+      color: #e7b3aa; }
+  .detail .similar_item img {
+    width: 15rem; }
+
+.detail .similar {
+  margin-top: 5%; }
+
+.review {
+  padding: 1%; }
+  .review_text {
+    font-size: 1.5rem; }
+  .review_user {
+    display: flex;
+    justify-content: space-between; }
+    .review_user img {
+      border-radius: 50%; }
+  .review_box {
+    padding: 6%;
+    background-color: lavenderblush;
+    margin-bottom: 9%;
+    margin-top: 9%; }
+    .review_box p {
+      font-size: 1.2rem; }
+    .review_box img {
+      width: 4rem; }
+  .review .review_rating {
+    margin-right: 0%; }
+    .review .review_rating p {
+      font-size: 2.5rem;
+      color: crimson; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -213,7 +273,7 @@ body {
 
 .content {
   display: flex;
-  height: 100vh; }
+  height: 100%; }
 
 .sidebar {
   background-color: #141615;
@@ -221,3 +281,19 @@ body {
 
 .hotel {
   flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4%;
+  background-color: bisque;
+  border-bottom: 1cm black; }
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4%;
+  background-color: orangered;
+  padding: 4%; }
+
+.review {
+  flex: 1;
+  background-color: yellowgreen; }
