@@ -286,6 +286,34 @@ body {
     .btn a use {
       fill: currentColor; }
 
+.book {
+  border-top: 2px solid #454141;
+  padding: 4%;
+  text-align: center; }
+  .book .button {
+    padding: 2%;
+    position: relative;
+    overflow: hidden;
+    color: transparent;
+    cursor: pointer; }
+    .book .button a {
+      padding: 1.5% 4%;
+      background-image: linear-gradient(to right, crimson, #db7687);
+      border-radius: 100px;
+      font-size: 2rem;
+      text-decoration: none;
+      color: white; }
+    .book .button_visible {
+      display: inline-block; }
+    .book .button_invisible {
+      display: inline-block;
+      position: absolute;
+      top: -100%; }
+    .book .button:hover .book .button_visible {
+      color: aqua; }
+    .book .button:hover .book .button_invisible {
+      top: 0%; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
