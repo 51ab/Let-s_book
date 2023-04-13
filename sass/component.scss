@@ -303,6 +303,7 @@
 
     .similar_item{
         display: flex;
+        margin-bottom: 5%;
         a{
             text-decoration: none;
             color:rgb(62, 58, 58);
@@ -323,8 +324,11 @@
 }
 .review{
     padding:  1%;
+    position: relative;
     &_text{
         font-size: 1.5rem;
+       //position: absolute;
+        z-index: 10;
     }
     &_user{
         display: flex;
@@ -340,6 +344,19 @@
     background-color: lavenderblush;
     margin-bottom: 9%;
     margin-top: 9%;
+    position: relative;
+    &::before{
+        content:"\201C";
+        position: absolute;
+        font-size: 18rem;
+        top:-4rem;
+        left:-1.6rem;
+        color:rgb(188, 232, 147);
+        font-family: sans-serif;
+        z-index: 1;
+        line-height: 1;
+
+    }
     p{
         font-size: 1.2rem;
        // margin-right: 0.3%;
@@ -355,4 +372,27 @@
     font-size: 2.5rem;
     color:crimson;}
 }
+}
+.btn{
+    text-align: center;
+    transition: all .5s;
+    
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+        color:rgb(203, 212, 182);
+        border-bottom: 1px solid rgb(197, 215, 159);
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1) 0s;
+        
+        &:hover{
+            color:black;
+            border-bottom:none;
+            transform:rotateX(50deg);
+            
+
+        }
+        use{
+        fill:currentColor;
+        }
+    }
 }
