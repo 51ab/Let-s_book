@@ -12,7 +12,8 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 68.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 50%;
+      overflow: hidden; } }
 
 body {
   background-image: linear-gradient(to right bottom, crimson, #e23937);
@@ -33,6 +34,10 @@ body {
   align-items: center;
   justify-content: center;
   flex: 0 0 40%; }
+  @media only screen and (max-width: 30.5em) {
+    .search {
+      order: 1;
+      flex: 0 0 70%; } }
   .search_input {
     background-color: #d1bfbf;
     font-size: 2.5rem;
@@ -208,6 +213,9 @@ body {
       @media only screen and (max-width: 42.5em) {
         .overview_hotel_name h1 {
           font-size: 1.5rem; } }
+      @media only screen and (max-width: 23em) {
+        .overview_hotel_name h1 {
+          font-size: 1.2rem; } }
   .overview_location {
     display: flex;
     align-items: center; }
@@ -220,6 +228,9 @@ body {
       @media only screen and (max-width: 42.5em) {
         .overview_location a {
           font-size: 1.6rem; } }
+      @media only screen and (max-width: 23em) {
+        .overview_location a {
+          font-size: 1.2rem; } }
       .overview_location a:hover {
         color: crimson;
         border-bottom: none;
@@ -289,6 +300,12 @@ body {
       color: #e7b3aa; }
   .detail .similar_item img {
     width: 15rem; }
+    @media only screen and (max-width: 30.5em) {
+      .detail .similar_item img {
+        width: 14rem; } }
+    @media only screen and (max-width: 23em) {
+      .detail .similar_item img {
+        width: 12rem; } }
 
 .detail .similar {
   margin-top: 5%; }
@@ -392,6 +409,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 30.5em) {
+    .header {
+      flex-wrap: wrap;
+      height: 14rem;
+      justify-content: space-around; } }
 
 .content {
   display: flex;

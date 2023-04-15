@@ -8,9 +8,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-   
     flex :0 0 40%;
+    @media only screen and (max-width: $bp-smallest)
+    {
+        order:1;
+        flex:0 0 70%;
+       
+
+    }
     &_input{
         background-color: rgb(209, 191, 191);
         font-size:2.5rem;
@@ -270,6 +275,9 @@
         @media only screen and (max-width: $bp-small){
             font-size: 1.5rem;
         }
+        @media only screen and (max-width: $bp-xsmall){
+            font-size: 1.2rem;
+        }
       
     }}
     &_location{
@@ -282,8 +290,12 @@
             color:black;
             font-size: 2rem;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            //////////////////////////////////////
             @media only screen and (max-width: $bp-small){
                 font-size: 1.6rem;
+            }
+            @media only screen and (max-width: $bp-xsmall){
+                font-size: 1.2rem;
             }
             
             &:hover{
@@ -380,6 +392,16 @@
       }
       img{
         width:15rem;
+        @media only screen and (max-width: $bp-smallest)
+        {
+           
+            width:14rem;
+        }
+        @media only screen and (max-width: $bp-xsmall)
+        {
+           
+            width:12rem;
+        }
       }
     }
     .similar{

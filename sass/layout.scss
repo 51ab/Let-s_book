@@ -19,6 +19,14 @@ min-height: 50rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: $bp-smallest)
+    {
+       
+        flex-wrap: wrap;
+        height: 14rem;
+        justify-content: space-around;
+        //margin: 0 -9%;
+    }
 
 }
 .content{
