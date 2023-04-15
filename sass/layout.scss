@@ -4,8 +4,14 @@ margin: 8rem auto;
 background-color: rgb(187, 173, 173);
 box-shadow: 0 2rem 6rem rgba(0,0,0,0.3);
 min-height: 50rem;
-
+@media only screen and (max-width:$bp-largest)
+    {
+        padding: 0%;
+        margin: 0%;
+    }
 }
+
+
 .header{
     height: 8rem;
     background-color: white;
@@ -18,6 +24,10 @@ min-height: 50rem;
 .content{
     display:flex;
     height: 100%;
+    @media only screen and (max-width:$bp-medium)
+    {
+       flex-direction: column;
+    }
 
 }
 .sidebar{
@@ -35,6 +45,14 @@ min-height: 50rem;
     padding: 4%;
     background-color: bisque;
     border-bottom: 1cm black;
+    @media only screen and (max-width:$bp-medium)
+    {
+       padding: 1%;
+    }
+    @media only screen and (max-width: $bp-small)
+    {
+        flex-direction: column;
+    }
     
 }
 .description{
@@ -42,6 +60,12 @@ min-height: 50rem;
     margin-right: 4%;
     background-color:orangered ;
     padding:4%;
+    @media only screen and (max-width:$bp-medium)
+    {
+       padding: 2%;
+       margin-right: 1%;
+    }
+    
     
 
 }

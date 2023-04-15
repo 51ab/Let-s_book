@@ -20,6 +20,9 @@
         width: 90%;
         transition: all .3s;
         margin-right: -3.25rem;
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.8rem;
+        }
         &:focus{
             outline: none;
             width: 100%;
@@ -55,6 +58,10 @@
     &_icon{
         height:2rem;
         width:2rem;
+        @media only screen and (max-width: $bp-small){
+            height:1.8rem;
+            width:1.8rem;
+        }
 
     }
 }
@@ -132,6 +139,25 @@
         
         text-decoration: none;
         list-style: none;
+        @media only screen and (max-width:$bp-medium)
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0% 0%;
+        justify-items: center;
+        //font-size: ;
+        text-align: center;
+    }
+    @media only screen and (max-width:$bp-small)
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0% 0%;
+        justify-items: center;
+        //font-size: ;
+        text-align: center;
+    }
+   
         
 
         &_items::before{
@@ -160,6 +186,16 @@
         margin-bottom: 3rem;
         position: relative;
         padding: 2%;
+        @media only screen and (max-width:$bp-medium){
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            position: relative;
+            padding: 0% 1% 1% 1%;
+            width:25%;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+        }
         
 
     }
@@ -173,6 +209,20 @@
             text-decoration: none;
            // padding: 1rem 2rem;
            z-index: 100px;
+           @media only screen and (max-width:$bp-medium){
+            
+            padding: 0% ;
+        }
+        @media only screen and (max-width: $bp-small)
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 7% 0% 0% 0%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        
     }
     
     &_link:hover{
@@ -217,6 +267,9 @@
         text-transform: uppercase;
         font-size: 2.2rem;
         font-family: 'Times New Roman', Times, serif;
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.5rem;
+        }
       
     }}
     &_location{
@@ -229,6 +282,10 @@
             color:black;
             font-size: 2rem;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            @media only screen and (max-width: $bp-small){
+                font-size: 1.6rem;
+            }
+            
             &:hover{
                 color:crimson;
                 border-bottom: none;
@@ -244,15 +301,20 @@
     &_icon{
         width:2rem;
         height:2rem;
-        
-       
-    
        fill:crimson;
+       @media only screen and (max-width: $bp-small)
+       {
+        width:1.5rem;
+        height:1.5rem;
+       }
     }
     &_vote{
         background-color: crimson;
         color:white;
         padding: 1.5%;
+        @media only screen and (max-width: $bp-small){
+            padding: 2%;
+        }
        // align-self: self-start;
     }
 }
@@ -282,6 +344,7 @@
     h1{
         color:rgb(62, 58, 58);
         font-family: 'Times New Roman', Times, serif;
+        text-align: center;
         
     }
     .list{
@@ -304,6 +367,7 @@
     .similar_item{
         display: flex;
         margin-bottom: 5%;
+        justify-content: center;
         a{
             text-decoration: none;
             color:rgb(62, 58, 58);
@@ -348,7 +412,7 @@
     &::before{
         content:"\201C";
         position: absolute;
-        font-size: 18rem;
+        font-size: 15rem;
         top:-4rem;
         left:-1.6rem;
         color:rgb(188, 232, 147);
