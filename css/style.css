@@ -417,7 +417,8 @@ body {
       padding: 1%; } }
   @media only screen and (max-width: 42.5em) {
     .detail {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: 2%; } }
 
 .description {
   flex: 0 0 60%;
@@ -428,6 +429,9 @@ body {
     .description {
       padding: 2%;
       margin-right: 1%; } }
+  @media only screen and (max-width: 42.5em) {
+    .description {
+      padding: 5%; } }
 
 .review {
   flex: 1;
