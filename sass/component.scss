@@ -352,6 +352,9 @@
     }
     li{
         font-size: 1.4rem;
+        @media only screen and (max-width: $bp-xsmall){
+            font-size: 1.2rem;
+        }
     }
     h1{
         color:rgb(62, 58, 58);
@@ -379,10 +382,17 @@
     .similar_item{
         display: flex;
         margin-bottom: 5%;
-        justify-content: center;
+        justify-content: space-between;
         a{
             text-decoration: none;
             color:rgb(62, 58, 58);
+            margin-right: 2%;
+            @media only screen and (max-width: $bp-xsmall){
+               margin-right: 1%;
+               p{
+                font-size: 1.3rem;
+               }
+            }
             :hover{
                 color:rgb(231, 179, 170);
             }

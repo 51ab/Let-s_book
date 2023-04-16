@@ -269,6 +269,9 @@ body {
 
 .detail li {
   font-size: 1.4rem; }
+  @media only screen and (max-width: 23em) {
+    .detail li {
+      font-size: 1.2rem; } }
 
 .detail h1 {
   color: #3e3a3a;
@@ -291,10 +294,16 @@ body {
 .detail .similar_item {
   display: flex;
   margin-bottom: 5%;
-  justify-content: center; }
+  justify-content: space-between; }
   .detail .similar_item a {
     text-decoration: none;
-    color: #3e3a3a; }
+    color: #3e3a3a;
+    margin-right: 2%; }
+    @media only screen and (max-width: 23em) {
+      .detail .similar_item a {
+        margin-right: 1%; }
+        .detail .similar_item a p {
+          font-size: 1.3rem; } }
     .detail .similar_item a :hover {
       color: #e7b3aa; }
   .detail .similar_item img {
