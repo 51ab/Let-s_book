@@ -124,7 +124,7 @@ body {
     .sidebar .sidenav {
       display: flex;
       justify-content: center;
-      margin: 2% 0%;
+      margin: 2% 2%;
       justify-items: center;
       text-align: center; } }
   @media only screen and (max-width: 42.5em) {
