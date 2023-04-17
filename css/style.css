@@ -124,14 +124,14 @@ body {
     .sidebar .sidenav {
       display: flex;
       justify-content: center;
-      margin: 0% 0%;
+      margin: 2% 0%;
       justify-items: center;
       text-align: center; } }
   @media only screen and (max-width: 42.5em) {
     .sidebar .sidenav {
       display: flex;
       justify-content: center;
-      margin: 0% 0%;
+      margin: 2% 1%;
       justify-items: center;
       text-align: center; } }
   .sidebar .sidenav_items::before {
